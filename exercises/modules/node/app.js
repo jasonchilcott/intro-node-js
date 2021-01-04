@@ -14,15 +14,18 @@ const showPostsForCurrentUser = (userId, cb) => {
   })
 }
 
-window.App.showUserProfile = (userId, cb) => {
-  window.App.getUserById(userId, user => {
-    const profile = `
-      <div>
-        ${user.name}
-      </div>
-    `
+const showUserProfile = (userId, cb) => {
+  api.getUserById(userId, user => {
+    const profile = 
+      
+        console.log(user.name)
+      
     cb(user)
   })
 }
 
 
+module.exports = {
+  showPostsForCurrentUser,
+  showUserProfile
+}
