@@ -9,7 +9,7 @@ app.use(urlencoded({extended: true}))
 app.use(json())
 
 app.get('/user/:id', async (req, res) => {
-  console.log(req)
+  
   const id = req.params.id
   // should ge user by given id in route param
   const user = await users.findUser(id)
@@ -17,7 +17,7 @@ app.get('/user/:id', async (req, res) => {
 })
 
 app.delete('/user/:id', async (req, res) => {
-  const id = req.id
+  const id = req.params.id
   await users.deleteUser(id)
   res.status(201).send({id})
 })

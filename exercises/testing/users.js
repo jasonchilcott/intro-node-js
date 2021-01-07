@@ -7,10 +7,13 @@ const users = new Array(20).fill(0)
   }
 })
 
+const fixId = id => parseInt(id)
+
 // simulate async db call with promise
 const findUser = (id) => new Promise((resolve, reject) => {
-  console.log(id)
-  const user = users.find(user => user.id === id)
+  let _id = fixId(id)
+ 
+  const user = users.find(user => user.id === _id)
   if (user) {
     return resolve(user)
   }
