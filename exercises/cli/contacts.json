@@ -1,1 +1,22 @@
-{"adfsadf asfdasdf":{"firstName":"adfsadf","lastName":"asfdasdf","phoneNumber":"asfdsf"},"jason chilcott":{"firstName":"jason","lastName":"chilcott","phoneNumber":"69"}}
+{
+  "adfsadf asfdasdf": {
+    "firstName": "adfsadf",
+    "lastName": "asfdasdf",
+    "phoneNumber": "asfdsf"
+  },
+  "jason chilcott": {
+    "firstName": "jason",
+    "lastName": "chilcott",
+    "phoneNumber": "69"
+  },
+  "Rachel White": {
+    "firstName": "Rachel",
+    "lastName": "White",
+    "phoneNumber": "69"
+  },
+  "Reset Smith": {
+    "firstName": "Reset",
+    "lastName": "Smith",
+    "phoneNumber": "420"
+  }
+}
